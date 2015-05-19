@@ -1,0 +1,19 @@
+<?php
+function hello_menu() {
+    $items = array();
+    $items['success_page'] = array(
+        'title' => 'Success Page',
+        'page callback' => 'success',
+        'access callback' => TRUE,
+        'type' => MENU_CALLBACK,
+    );
+    return $items;
+}
+
+function success() {
+    return '<p>You have successfully created an account!</p>';
+}
+
+function hello_user_insert() {
+    $_GET['destination'] = 'success_page';
+}
