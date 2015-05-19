@@ -1,4 +1,4 @@
-name: Hello User
+name = Hello User
 description = Greets new user upon account creation
 package = Epicodus Examples
 core = 7.x
