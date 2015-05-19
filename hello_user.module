@@ -1,5 +1,5 @@
 <?php
-function hello_menu() {
+function hello_user_menu() {
     $items = array();
     $items['success_page'] = array(
         'title' => 'Success Page',
@@ -14,6 +14,6 @@ function success() {
     return '<p>You have successfully created an account!</p>';
 }
 
-function hello_user_insert() {
+function hello_user_user_insert() {
     $_GET['destination'] = 'success_page';
 }
